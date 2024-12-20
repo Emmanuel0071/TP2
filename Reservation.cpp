@@ -14,6 +14,4 @@ Reservation::Reservation(
     idClient(_idClient),
     price(_price) {}
 
-Reservation::~Reservation()
-{
-}
+Reservation::~Reservation() {}

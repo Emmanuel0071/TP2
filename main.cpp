@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Room.h"
 #include "Hotel.h"
+#include "Reservation.h"
 
 int main() {
     Room chambre1(101, 1, 120.50);
@@ -34,6 +35,8 @@ int main() {
         std::cout << room << " ";
     }
     std::cout << std::endl;
+
+    Date today(20, 12, 2024);
 
     return 0;
 }
