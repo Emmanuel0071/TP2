@@ -1,11 +1,12 @@
-#pragma once
+#ifndef RESERVATION_H
+#define RESERVATION_H
 
 //#include "Date.h"
 #include <string>
 
 class Reservation {
 private:
-    const Date& startDate;
+    const Date startDate;
     const int nightNb;
     const std::string idHotel;
     const std::string idRoom;
@@ -23,3 +24,5 @@ public:
 
     ~Reservation();
 };
+
+#endif //RESERVATION_H
