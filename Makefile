@@ -2,11 +2,11 @@ CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -Werror  # Options de compilation
 
 # Liste des fichiers source et objets
-SRCS = main.cpp Chambre.cpp Hotel.cpp
+SRCS = main.cpp Date.cpp Livre.cpp Auteur.cpp Lecteur.cpp Emprunt.cpp Bibliotheque.cpp
 OBJS = $(SRCS:.cpp=.o)   
 
 
-TARGET = tp2
+TARGET = bibliotheque
 
 
 all: $(TARGET)
