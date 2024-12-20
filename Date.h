@@ -11,7 +11,7 @@ public:
     Date(int _day, int _month, int _year);
     ~Date();
 
-    const bool isValidDate(int day, int month, int year) const;
+    bool isValidDate(int day, int month, int year) const;
 };
 
 #endif //DATE_H

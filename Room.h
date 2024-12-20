@@ -15,10 +15,10 @@ private:
 public:
     Room(int _number, int _type, float _price);
 
-    const int getNumber() const;
-    const int getType() const;
-    const float getPrice() const;
-	void setPrice(const float newPrice); // Méthode pour modifier le prix
+    int getNumber() const;
+    int getType() const;
+    float getPrice() const;
+	void setPrice(float newPrice); // Méthode pour modifier le prix
 };
 
 

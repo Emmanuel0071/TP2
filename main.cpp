@@ -12,7 +12,6 @@ int main() {
     std::cout << "Prix apres modification : " << chambre1.getPrice() << " €" << std::endl;
 
 
-
     std::vector<std::string> rooms = {"101", "102", "103"};
     Hotel hotel("H001", "Grand Palace", "Paris", rooms);
 
@@ -23,7 +22,7 @@ int main() {
     std::cout << std::endl;
 
     hotel.addRoom("104");
-    std::cout << "Après ajout de la chambre 104 : ";
+    std::cout << "Apres ajout de la chambre 104 : ";
     for (const auto& room : hotel.getRooms()) {
         std::cout << room << " ";
     }
@@ -36,7 +35,6 @@ int main() {
     }
     std::cout << std::endl;
 
-    Date today(20, 12, 2024);
 
     return 0;
 }

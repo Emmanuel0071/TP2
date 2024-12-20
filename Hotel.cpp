@@ -28,9 +28,10 @@ void Hotel::addRoom(const std::string& room) {
 }
 
 void Hotel::removeRoom(const std::string& room) {
-    for (int i = 0; i < _rooms.size(); ++i) {
+    for (size_t i = 0; i < _rooms.size(); ++i) {
         if (_rooms[i] == room) {
             _rooms.erase(_rooms.begin() + i);
             break;
         }
     }
+}
