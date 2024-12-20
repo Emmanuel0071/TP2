@@ -13,12 +13,11 @@ Date::Date(int _day, int _month, int _year) {
 Date::~Date() {}
 
 const bool Date::isValidDate(int day, int month, int year) const {
-    bool bissextileYear = (year % 4) == 0;
     if (month >= 1 && month <= 12) {
         int dayCount;
         switch (month) {
             case 1 : dayCount = 31; break;
-            case 2 : dayCount = 28 + bissextileYear; break;
+            case 2 : dayCount = 28 + ((year % 4) == 0); break;
             case 3 : dayCount = 31; break;
             case 4 : dayCount = 30; break;
             case 5 : dayCount = 31; break;
@@ -28,8 +27,8 @@ const bool Date::isValidDate(int day, int month, int year) const {
             case 9 : dayCount = 30; break;
             case 10 : dayCount = 31; break;
             case 11 : dayCount = 30; break;
-            case 13 : dayCount = 31; break;
-            default: dayCount = -1; break;
+            case 12 : dayCount = 31; break;
+            default: return false;
         }
         if (day < 1 || day > dayCount) {
             return false;
