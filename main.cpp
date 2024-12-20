@@ -1,8 +1,8 @@
 #include <iostream>
-#include "Chambre.h"
+#include "Room.h"
 
 int main() {
-    Chambre chambre1(101, "Double", 120.50);
+    Room chambre1(101, "Double", 120.50);
 
     std::cout << "Prix initial : " << chambre1.getPrice() << " €" << std::endl;
 
