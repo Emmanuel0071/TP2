@@ -1,13 +1,13 @@
-#ifndef CHAMBRE_H
-#define CHAMBRE_H
+#ifndef ROOM_H
+#define ROOM_H
 
 #include <iostream>
 
 
 
-class Chambre {
+class Room {
 	public:
-    	Chambre(int number,std::string type, float price);
+    	Room(int number,std::string type, float price);
 
     	int getNumber();
     	std::string getType();
@@ -22,4 +22,4 @@ class Chambre {
 
 
 
-#endif //CHAMBRE_H
+#endif //ROOM_H
