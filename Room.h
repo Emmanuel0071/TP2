@@ -2,22 +2,23 @@
 #define ROOM_H
 
 #include <iostream>
-
-
+#include <vector>
 
 class Room {
-	public:
-    	Room(int number,std::string type, float price);
+private:
+    int number;
+	int type;
+    float price;
 
-    	int getNumber();
-    	std::string getType();
-    	float getPrice();
-		void setPrice(float newPrice); // Méthode pour modifier le prix
+	std::vector<std::string> typeList = {"Simple", "Double", "Suite"};
 
-    private:
-    	int _number;
-    	std::string _type;
-    	float _price;
+public:
+    Room(int _number, int _type, float _price);
+
+    const int getNumber() const;
+    const int getType() const;
+    const float getPrice() const;
+	void setPrice(const float newPrice); // Méthode pour modifier le prix
 };
 
 

@@ -1,23 +1,23 @@
 #include "Room.h"
 
-Room::Room(int number, std::string type, float price) {
-  _number = number;
-  _type = type;
-  _price = price;
+Room::Room(int _number, int _type, float _price) {
+  number = _number;
+  type = _type;
+  price = _price;
 }
 
-int Room::getNumber() {
-  return _number;
+const int Room::getNumber() const {
+  return number;
 }
 
-std::string Room::getType() {
-  return _type;
+const int Room::getType() const {
+  return type;
 }
 
-float Room::getPrice() {
-  return _price;
+const float Room::getPrice() const {
+  return price;
 }
 
-void Room::setPrice(float newPrice) {
-  _price = newPrice;
+void Room::setPrice(const float newPrice) {
+  price = newPrice;
 }
