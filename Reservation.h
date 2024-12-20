@@ -1,4 +1,5 @@
-#pragma once
+#ifndef CHAMBRE_H
+#define CHAMBRE_H
 
 #include "Date.h"
 #include <string>
@@ -23,3 +24,5 @@ public:
 
     ~Reservation();
 };
+
+#endif //CHAMBRE_H

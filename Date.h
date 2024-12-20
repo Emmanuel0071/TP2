@@ -1,4 +1,5 @@
-#pragma one
+#ifndef CHAMBRE_H
+#define CHAMBRE_H
 
 class Date {
 private:
@@ -12,3 +13,5 @@ public:
 
     const bool isValidDate(int day, int month, int year) const;
 };
+
+#endif //CHAMBRE_H
