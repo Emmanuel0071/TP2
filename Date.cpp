@@ -13,6 +13,7 @@ Date::Date(int _day, int _month, int _year) {
 Date::~Date() {}
 
 bool Date::isValidDate(int day, int month, int year) const {
+
     if (month >= 1 && month <= 12) {
         int dayCount;
         switch (month) {
@@ -36,4 +37,10 @@ bool Date::isValidDate(int day, int month, int year) const {
         return true;
     }
     return false;
+}
+
+void Date::modifyDate(int d, int m, int y) {
+    day = d;
+    month = m;
+    year = y;
 }

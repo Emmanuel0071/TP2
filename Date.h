@@ -12,6 +12,9 @@ public:
     ~Date();
 
     bool isValidDate(int day, int month, int year) const;
+
+    void modifyDate(int d, int m, int y);
+
 };
 
 #endif //DATE_H
