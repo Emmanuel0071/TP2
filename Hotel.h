@@ -11,16 +11,16 @@ class Hotel {
     void addRoom(const std::string& room);      // Ajouter une chambre
     void removeRoom(const std::string& room);   // Supprimer une chambre
 
-    std::string getID();
-    std::string getName();
-    std::string getCity();
-    std::vector<std::string> getRooms();
-
+    std::string& getID();
+    std::string& getName();
+    std::string& getCity();
+    std::vector<Room>& getRooms();
+    
     private:
     std::string _ID;
     std::string _name;
     std::string _city;
-    std::vector<std::string> _rooms;
+    std::vector<Room> _rooms;
 
 };
 
